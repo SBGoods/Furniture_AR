@@ -77,3 +77,13 @@ sceneform.asset('sampledata/models/chair/chair.obj',
         'default',
         'sampledata/models/chair/chair.sfa',
         'src/main/assets/chair')
+
+sceneform.asset('sampledata/models/boba_tea/LowPolyCup.obj',
+        'default',
+        'sampledata/models/boba_tea/LowPolyCup.sfa',
+        'src/main/assets/LowPolyCup')
+
+sceneform.asset('sampledata/models/table/Table_Large_Rectangular_01.obj',
+        'default',
+        'sampledata/models/table/Table_Large_Rectangular_01.sfa',
+        'src/main/assets/Table_Large_Rectangular_01')

@@ -26,6 +26,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -143,21 +144,33 @@ public class FurnitureActivity extends AppCompatActivity {
         LinearLayout gallery = findViewById(R.id.gallery_layout);
 
         ImageView lamp = new ImageView(this);
-        lamp.setImageResource(R.drawable.lamp_thumb);
+        lamp.setImageResource(R.drawable.lamp_resize);
         lamp.setContentDescription("lamp");
         lamp.setOnClickListener(view ->{buildObject("LampPost.sfb");});
         gallery.addView(lamp);
 
         ImageView couch = new ImageView(this);
-        couch.setImageResource(R.drawable.couch_thumb);
+        couch.setImageResource(R.drawable.couch_resize);
         couch.setContentDescription("couch");
         couch.setOnClickListener(view ->{buildObject("couch.sfb");});
         gallery.addView(couch);
 
         ImageView chair = new ImageView(this);
-        chair.setImageResource(R.drawable.chair_thumb);
+        chair.setImageResource(R.drawable.chair_resize);
         chair.setContentDescription("chair");
         chair.setOnClickListener(view ->{buildObject("chair.sfb");});
         gallery.addView(chair);
+
+        ImageView tea = new ImageView(this);
+        tea.setImageResource(R.drawable.tea_resize);
+        tea.setContentDescription("tea");
+        tea.setOnClickListener(view ->{buildObject("LowPolyCup.sfb");});
+        gallery.addView(tea);
+
+        ImageView table = new ImageView(this);
+        table.setImageResource(R.drawable.table_resize);
+        table.setContentDescription("table");
+        table.setOnClickListener(view ->{buildObject("Table_Large_Rectangular_01.sfb");});
+        gallery.addView(table);
     }
 }
